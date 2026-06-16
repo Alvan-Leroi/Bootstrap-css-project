@@ -4,49 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nao Bakery</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>Nao Bakery</h1>
-    <div class="products">
-      <h1>Products</h1>
-      <ul>
-        <div class="Choco">
-          <li>
-            <h2>Chocolate Croissant</h2>
-            <p>A flaky croissant filled with rich chocolate.</p>
-          </li>
+    <!-- Header / Navbar -->
+    <header class="hero-section">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Nao Bakery</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="Strawberry">
-          <li>
-            <h2>Strawberry Tart</h2>
-            <p>A buttery tart filled with fresh strawberries and cream.</p>
-          </li>
+      </nav>
+
+      <!-- Hero Content -->
+      <section class="hero-content text-center text-white">
+        <div class="container">
+          <h1 class="display-3 fw-bold">Freshly Baked Every Day</h1>
+          <p class="lead">
+            Delicious pastries, breads, muffins, and desserts made with love.
+          </p>
+          <a href="#products" class="btn btn-warning btn-lg mt-3"
+            >View Products</a
+          >
         </div>
-        <div class="Blueberry">
-          <li>
-            <h2>Blueberry Muffin</h2>
-            <p>A moist muffin bursting with fresh blueberries.</p>
-          </li>
+      </section>
+    </header>
+
+    <!-- Products Section -->
+    <main>
+      <section id="products" class="products-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Products</h2>
+
+          <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Image/chocolate.jpg"
+                  class="card-img-top"
+                  alt="Chocolate Croissant"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Croissant</h5>
+                  <p class="card-text">
+                    A flaky croissant filled with rich chocolate.
+                  </p>
+                  <a href="#" class="btn btn-dark">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Image/strawberry.jpg"
+                  class="card-img-top"
+                  alt="Strawberry Tart"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry Tart</h5>
+                  <p class="card-text">
+                    A buttery tart filled with fresh strawberries and cream.
+                  </p>
+                  <a href="#" class="btn btn-dark">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Image/muffin.jpg"
+                  class="card-img-top"
+                  alt="Blueberry Muffin"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Blueberry Muffin</h5>
+                  <p class="card-text">
+                    A moist muffin bursting with fresh blueberries.
+                  </p>
+                  <a href="#" class="btn btn-dark">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Image/bread.jpg"
+                  class="card-img-top"
+                  alt="Sourdough Bread"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Sourdough Bread</h5>
+                  <p class="card-text">
+                    A crusty loaf with a tangy flavor, perfect for sandwiches.
+                  </p>
+                  <a href="#" class="btn btn-dark">Order Now</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Image/cinamon.jpg"
+                  class="card-img-top"
+                  alt="Cinnamon Roll"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">Cinnamon Roll</h5>
+                  <p class="card-text">
+                    A soft roll swirled with cinnamon and topped with cream
+                    cheese frosting.
+                  </p>
+                  <a href="#" class="btn btn-dark">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="Sourdough">
-          <li>
-            <h2>Sourdough Bread</h2>
-            <p>A crusty loaf with a tangy flavor, perfect for sandwiches.</p>
-          </li>
-        </div>
-        <div class="Cinnamon">
-          <li>
-            <h2>Cinnamon Roll</h2>
-            <p>
-              A soft and pillowy roll swirled with cinnamon and topped with
-              cream cheese frosting.
-            </p>
-          </li>
-        </div>
-      </ul>
-    </div>
-    <footer>
-      <p>&copy; 2023 Nao Bakery. All rights reserved.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer text-center py-4">
+      <div class="container">
+        <h4>Nao Bakery</h4>
+        <p>Email: hello@naobakery.com</p>
+        <p>&copy; 2023 Nao Bakery. All rights reserved.</p>
+      </div>
     </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
